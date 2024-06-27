@@ -10,11 +10,14 @@ return {
             require "configs.conform"
         end,
     },
-
+    {
+        -- copilot
+        -- require "plugins.nvcommunity.completion.copilot",
+    },
     {
         -- editor import
-        require "plugins.nvcommunity.editor.biscuits",
-        require "plugins.nvcommunity.editor.hlargs",
+        -- require "plugins.nvcommunity.editor.biscuits",
+        -- require "plugins.nvcommunity.editor.hlargs",
     },
     {
         --lsp import
@@ -51,18 +54,18 @@ return {
             return conf
         end,
     },
-    {
-        "declancm/cinnamon.nvim",
-        config = function()
-            require("cinnamon").setup {
-                default_keymaps = true, -- Create default keymaps.
-                extra_keymaps = true, -- Create extra keymaps.
-                extended_keymaps = true, -- Create extended keymaps.
-                override_keymaps = true,
-                max_length = 500,
-                scroll_limit = -1,
-            }
-        end,
-        lazy = is_vscode(),
-    },
+    -- {
+    --     "declancm/cinnamon.nvim",
+    --     config = function()
+    --         require("cinnamon").setup {
+    --             default_keymaps = true, -- Create default keymaps.
+    --             extra_keymaps = true, -- Create extra keymaps.
+    --             extended_keymaps = true, -- Create extended keymaps.
+    --             override_keymaps = true,
+    --             max_length = -1,
+    --             scroll_limit = -1,
+    --         }
+    --     end,
+    --     lazy = is_vscode(),
+    -- },
 }
