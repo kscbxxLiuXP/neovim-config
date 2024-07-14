@@ -20,16 +20,19 @@ return {
         -- require "plugins.nvcommunity.editor.hlargs",
     },
     {
-        --lsp import
-        require "plugins.nvcommunity.lsp.barbecue",
-        require "plugins.nvcommunity.lsp.codeactionmenu",
-        require "plugins.nvcommunity.lsp.dim",
-        require "plugins.nvcommunity.lsp.lsplines",
-        require "plugins.nvcommunity.lsp.lspsaga",
-        require "plugins.nvcommunity.lsp.lspui",
-        require "plugins.nvcommunity.lsp.mason-lspconfig",
-        require "plugins.nvcommunity.lsp.prettyhover",
+        require "plugins.nvcommunity.lsp.init",
     },
+    -- {
+    --     --lsp import
+    --     { import = "plugins.nvcommunity.lsp.barbecue" },
+    --     { import = "plugins.nvcommunity.lsp.codeactionmenu" },
+    --     { import = "plugins.nvcommunity.lsp.dim" },
+    --     { import = "plugins.nvcommunity.lsp.lsplines" },
+    --     { import = "plugins.nvcommunity.lsp.lspsaga" },
+    --     { import = "plugins.nvcommunity.lsp.lspui" },
+    --     { import = "plugins.nvcommunity.lsp.mason-lspconfig" },
+    --     { import = "plugins.nvcommunity.lsp.prettyhover" },
+    -- },
     {
         -- git import
         require "plugins.nvcommunity.git.neogit",
